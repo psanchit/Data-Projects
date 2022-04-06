@@ -9,7 +9,7 @@ select saledate, cast(saledate as date) from nashvillehousing;
 update nashvillehousing
 set saledate = cast(saledate as date);
 
---populate property address data
+--Populate property address data
 
 select a.propertyaddress,a.parcelid,b.propertyaddress ,b.parcelid,replace(b.propertyaddress,a.propertyaddress)
 from nashvillehousing a
